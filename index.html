@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Blog</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function myFunction() {
+        let element = document.body;
+        element.classList.toggle("dark");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="nav container">
+        <a href="#" class="logo">Sasha<span>WonderYou</span></a>
+        <div class="buttons">
+          <a href="#" class="login">Sign Up</a>
+          <button onclick="myFunction()">Switch mode</button>
+        </div>
+      </div>
+    </header>
+    <section class="home" id="home">
+      <div class="home-text container">
+        <h2 class="home-title">Your interest is here!</h2>
+        <span class="home-subtitle">Your own source of great content</span>
+      </div>
+    </section>
+
+    <!-- <div class="test" style="height: 100vh"></div> -->
+    <section class="about container" id="about">
+      <div class="contentBx">
+        <h2 class="titleText">
+          Catch up with the Trending news around the world
+        </h2>
+        <p class="title-Text">
+          Here we bring you the most relevant and accurate news around the world
+          week ago a friend invited a couple of other couples over for dinner.
+          Eventually, the food (but not the wine) was cleared off the table for
+          what turned out to be some fierce Scrabbling. Heeding the strategy of
+          going for the shorter, more valuable word over the longer cheaper
+          word, our final play was “Bon,” which–as luck would have it!–happens
+          to be a Japanese Buddhist festival, and not, as I had originally
+          asserted while laying the tiles on the board, one half of a
+          chocolate-covered cherry treat. Anyway, the strategy worked. My team
+          only lost by 53 points instead of 58. Just the day before, our host
+          had written of the challenges of writing short. In journalism–my
+          friend’s chosen trade, and mostly my own, too–Mark Twain’s observation
+          undoubtedly applies: “I didn’t have time to write a short letter, so I
+          wrote a long one instead.” The principle holds across genres, in
+          letters, reporting, and other writing. It’s harder to be concise than
+          to blather. (Full disclosure, this blog post will clock in at a
+          blather-esque 803 words.) Good writing is boiled down, not baked full
+          of air like a souffl??. No matter how yummy souffl??s may be. Which
+          they are. Yummy like a Grisham novel.
+        </p>
+        <a href="#" class="btn2">Read more</a>
+      </div>
+      <div class="imgBx">
+        <img src="d1.avif" alt="" class="fitBg" />
+      </div>
+    </section>
+
+    <div class="post-filter container">
+      <span class="filter-item active-filter" data-filter="all">All</span>
+      <span class="filter-item" data-filter="tech">Tech</span>
+      <span class="filter-item" data-filter="food">Food</span>
+      <span class="filter-item" data-filter="news">News</span>
+    </div>
+
+    <div class="post container">
+      <!-- post-1 -->
+
+      <div class="post-box tech">
+        <img src="tech1.avif"" class="post-img">
+        <h2 class="category">Tech</h2>
+        <a href="#" class="post-title"
+          >Swavlamban-2023 on Oct 4-5: Underwater drones, carbon suits: Navy
+          event to showcase new indigenous tech</a
+        >
+        <span class="post-date">27th Sept 2023</span>
+        <p class="post-description">
+          Showcasing the 75 new technologies — from ultra endurance swarm drones
+          to firefighting systems and blue-green lasers for underwater
+          applications — will underline the Navy’s progress since it announced,
+          at the seminar’s maiden edition last year, to develop the new
+          technologies as part of Azadi ka Amrit Mahotsav. A range of homegrown,
+          niche technologies will be on display at the Bharat Mandapam on
+          October 4-5 as Indian Navy unveils an updated indigenisation road map
+          during the Swavlamban seminar, officials said Wednesday. Defence
+          attaches and diplomats from more than 50 friendly foreign countries
+          are expected to attend the mega event. Showcasing the 75 new
+          technologies — from ultra endurance swarm drones to firefighting
+          systems and blue-green lasers for underwater applications — will
+          underline the Navy’s progress since it announced, at the seminar’s
+          maiden edition last year, to develop the new technologies as part of
+          Azadi ka Amrit Mahotsav.
+        </p>
+
+        <div class="profile">
+          <img src="res10.avif" alt="" class="profile-img" />
+          <span class="profile-name">The Indian Express</span>
+        </div>
+      </div>
+
+      <!-- post-2 -->
+
+      <div class="post-box food">
+        <img src="food1.jpg" alt="" class="post-img" />
+        <h2 class="category">Food</h2>
+        <a href="#" class="post-title"
+          >6 New Restaurants Changing California’s Dining Landscape; All Details
+          Inside</a
+        >
+        <span class="post-date">5th June 2023</span>
+        <p class="post-description">
+          We'll take you on a gastronomic tour of some of California's best
+          restaurants in this article, highlighting the state's reputation as a
+          sanctuary for foodies.California’s ever-evolving culinary landscape is
+          a vibrant mosaic of innovation and cultural fusion. It isn’t just
+          about sustenance, but a dynamic reflection of the states creativity,
+          sustainability, and appreciation for diverse tastes and traditions.
+          Savor varied gastronomic adventures at these six new dining
+          destinations that celebrate taste, culture, and ingenuity. From
+          farm-to-table emphasis to global influences.
+        </p>
+
+        <div class="profile">
+          <img src="res9.avif" alt="" class="profile-img" />
+          <span class="profile-name">News18</span>
+        </div>
+      </div>
+
+      <!-- post-3-->
+
+      <div class="post-box news">
+        <img src="res6.jpg" alt="" class="post-img" />
+        <h2 class="category">News</h2>
+        <a href="#" class="post-title"
+          >What is the required daily intake of vitamins and minerals?</a
+        >
+        <span class="post-date">10th Sept 2023</span>
+        <p class="post-description">
+          Vitamins and minerals are micronutrients that are responsible for many
+          life-sustaining biological processes. While most people can get enough
+          from diet alone, others may need to take a supplement. However, to
+          ensure safety, they should do so under the guidance of a doctor or
+          registered dietitian.Each vitamin and mineral plays a different role
+          in bodily processes. For example, sodium and potassium are crucial for
+          proper function of the central nervous system. Consuming enough of the
+          required vitamins and minerals is an essential part of eating a
+          balanced diet. Although a varied diet usually provides the
+          micronutrients a person needs, some people with restrictive diets —
+          such as vegetarians, people with certain medical conditions, and older
+          adults — may need to take a supplement. Read more to learn how much of
+          each vitamin and mineral an individual should consume, which
+          micronutrients are harmful when a person consumes them in excess, and
+          what common deficiencies there are.
+        </p>
+
+        <div class="profile">
+          <img src="res8.avif" alt="" class="profile-img" />
+          <span class="profile-name">New Bharat</span>
+        </div>
+      </div>
+
+      <!-- post-4-->
+
+      <div class="post-box tech">
+        <img src="techai.webp" alt="" class="post-img" />
+        <h2 class="category">Tech</h2>
+        <a href="#" class="post-title"
+          >ChatGPT can now access up to date information</a
+        >
+        <span class="post-date">12th August 2021</span>
+        <p class="post-description">
+          OpenAI, the Microsoft-backed creator of ChatGPT, has confirmed the
+          chatbot can now browse the internet to provide users with current
+          information. The artificial intelligence-powered system was previously
+          trained only using data up to September 2021. The move means some
+          premium users will be able to ask the chatbot questions about current
+          affairs, and access news. OpenAI said the feature would open up to all
+          users soon. Earlier in the week, OpenAI also revealed the chatbot will
+          soon be able to have voice conversations with users. ChatGPT and other
+          similar systems use huge amounts of data to create convincing
+          human-like responses to user queries. They are expected to
+          dramatically change the way people search for information online.
+        </p>
+
+        <div class="profile">
+          <img src="res7.avif" alt="" class="profile-img" />
+          <span class="profile-name">India Today</span>
+        </div>
+      </div>
+
+      <!-- post-5-->
+      <div class="post-box food">
+        <img src="food2.webp" alt="" class="post-img" />
+        <h2 class="category">Food</h2>
+        <a href="#" class="post-title"
+          >6 Healthy Juice Recipes to Try in Breakfast for Fresh Start</a
+        >
+        <span class="post-date">30th JUN 2020</span>
+        <p class="post-description">
+          The trick is to choose the one that fits your dietary and nutritional
+          demands while still tasting nice to you. It's a scrumptious and
+          filling way. A glass of fresh fruit or vegetable juice in the morning
+          is a great way to give yourself a boost of energy and important
+          nutrients. The trick is to choose the one that fits your dietary and
+          nutritional demands while still tasting nice to you. It's a
+          scrumptious and filling way to start the day. Starting your day with a
+          glass of fresh fruit or vegetable juice is an excellent way to
+          kickstart your morning with a dose of essential nutrients and energy.
+          These healthy breakfast juices help keep you feeling refreshed and
+          energized well into the late morning. The possibilities for morning
+          juices are abundant.
+        </p>
+
+        <div class="profile">
+          <img src="res3.jpg" alt="" class="profile-img" />
+          <span class="profile-name">DNA India</span>
+        </div>
+      </div>
+
+      <!-- post-6-->
+      <div class="post-box news">
+        <img src="res11.jpeg" alt="" class="post-img" />
+        <h2 class="category">News</h2>
+        <a href="#" class="post-title"
+          >Reducing the number of out-of-school children</a
+        >
+        <span class="post-date">10th August 2023</span>
+        <p class="post-description">
+          Since the early 2000s, South Asia has shown remarkable progress in
+          increasing school through the introduction of policies and
+          interventions that have expanded education coverage and reduced
+          out-of-school children (OOSC). Of the 278 million children of primary
+          and secondary school age in South Asia, 31.9 million were
+          out-of-school in 2014.Gender discrimination, disasters and armed
+          conflict, language challenges, household poverty, child labour, child
+          marriage and factors related to disability
+        </p>
+
+        <div class="profile">
+          <img src="res3.jpg" alt="" class="profile-img" />
+          <span class="profile-name">Abp live</span>
+        </div>
+      </div>
+
+      <!-- post-7 -->
+      <div class="post-box tech">
+        <img src="techlast.webp" alt="" class="post-img" />
+        <h2 class="category">Tech</h2>
+        <a href="#" class="post-title"
+          >Spotify will not ban AI-made music, says boss</a
+        >
+        <span class="post-date">10th Sept 2023</span>
+        <p class="post-description">
+          The boss of Spotify says he has no plans to completely ban content
+          created by artificial intelligence from the music streaming platform.
+          Earlier this year the platform pulled a track featuring AI-cloned
+          voices of the performers Drake and The Weeknd. Daniel Ek told the BBC
+          there were valid uses of the tech in making music - but AI should not
+          be used to impersonate human artists without their consent. He said
+          using AI in music was likely to be debated for "many, many years".Mr
+          Ek, who rarely speaks to the media, said that he saw three "buckets"
+          of AI use: tools such as auto-tune which improve music, which he
+          believed were acceptable tools which mimic artists, which were not and
+          a more contentious middle ground where music created by AI
+        </p>
+
+        <div class="profile">
+          <img src="res3.jpg" alt="" class="profile-img" />
+          <span class="profile-name">Spotify India</span>
+        </div>
+      </div>
+
+      <!-- post-8-->
+      <div class="post-box food">
+        <img src="food3.jpg" alt="" class="post-img" />
+        <h2 class="category">Food</h2>
+        <a href="#" class="post-title"
+          ><span
+            >National Nutrition Week: From Roti to Kurkure - The Evolution of
+            Rural Food Habits</span
+          ></a
+        >
+        <p class="post-description">
+          Shyamal Santra, Associate Director for Public Health and Nutrition,
+          Transform Rural India shares the changing food patterns of rural
+          India.On a recent journey to Kurdeg block in Jharkhand, I was
+          travelling with a young boy from Simdega who was returning from
+          college. While on the tempo van, it came to a halt at a location so
+          passengers could fill up on water from a tap. During this break, the
+          boy reached out for a packet of Kurkure because he was hungry. Many
+          other passengers did the same. When asked about food options, he
+          shared that along his route, no restaurants are serving traditional
+          meals like Roti and Sabji. He also mentioned that such options are
+          expensive and time-consuming. He suggested that it’s more convenient
+          to snack on items like Kurkure or chips with a bottle of water,
+          reserving the main meal for home. This practice is quite common among
+          children and youngsters, even in villages.For the longest time,
+          malnutrition has been a major concern in rural India while the issues
+          around obesity have been sidelined. However, the significant rise in
+          obesity levels among rural children and adults is a growing problem
+          and needs urgent attention. Especially with the rising prevalence of
+          non-communicable diseases in rural India and the related health risks
+          associated with obesity, it requires immediate public attention.
+        </p>
+
+        <div class="profile">
+          <img src="res3.jpg" alt=" " class="profile-img" />
+          <span class="profile-name">Daily Hunt</span>
+        </div>
+      </div>
+
+      <!-- post-9-->
+      <div class="post-box news">
+        <img src="last.avif" alt="" class="post-img" />
+        <h2 class="category">NEWS</h2>
+        <a href="#" class="post-title"
+          ><span>Khalistani Bhaggu Brar reports revealed</span></a
+        >
+        <p class="post-description">
+          Khalistani Bhaggu Brar intelligence reports reveal extensive Pakistani
+          links to pro-Khalistani terror activities, implicating individuals in
+          Canada.The series of reports on the dossier put up by the Indian
+          intelligence on pro-Khalistani terror activities from Canada has also
+          exposed the extensive Pakistani link. Be it Arsh Dala, Parry Dulai,
+          Gurjinder Singh Pannu, or Gurjeet Singh Cheema – all have either been
+          closely associated with or, at some point in time, took help from
+          Lakhbir Singh Rode, a Pakistan-based Khalistani separatist who
+          currently heads the proscribed terror outfit International Sikh Youth
+          Federation (ISYF), for their terror activities from Canadian soil.
+          While Arsh Dala has been closely associated with Rode, Parry Dulai and
+          Cheema allegedly played a role in sourcing a weapon consignment from
+          across the border in May 2017 for ISYF module members with the help of
+          the Pak-based terrorist.
+        </p>
+
+        <div class="profile">
+          <img src="res3.jpg" alt=" " class="profile-img" />
+          <span class="profile-name">Todays World.com</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-section">
+        <div class="sec aboutus">
+          <h2>About Us</h2>
+          <p>
+            We always try hard to bring the most uniques and updated news. We
+            put our full efforts so that you can enjoy the reading.
+          </p>
+          <ul class="sci">
+            <li>
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Quick Links</h2>
+          <ul>
+            <li href="#">Home</li>
+            <li href="#">About</li>
+          </ul>
+        </div>
+        <div class="sec contactBox">
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li>
+              <span><i class="bx bx-map"></i></span>
+              <span>
+                Quarter-01,Patia,Bhubaneswar<br />Khordha,Odisha<br />755028</span
+              >
+            </li>
+            <li>
+              <span><i class="bx bx-envelope"></i></span>
+              <span href="mailto:styleblock98@gmail.com"
+                >styleblock98@gmail.com</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
